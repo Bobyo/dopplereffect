@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dopler Effect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+
+            <div class="wrap">
+                
+                <div class="img-container">
+                    <img src="img/star-star-small.png" alt="" id="star" />
+                </div>
+
+                <div class="controls">
+
+                    <div class="velocity-input width float-left">
+                        <label for="#velocity-input">Velocity (km/h)</label>
+                        <input type="text" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));" onchange="changeValue(this.value, true)" class="input-value" value="0" />
+                    </div>
+
+                    <div class="velo-slider width float-right">
+                        <input class="input-range" onchange="changeValue(this.value)" step="10" type="range" value="0" min="-100" max="100">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+       
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

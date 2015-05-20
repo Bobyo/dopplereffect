@@ -1,0 +1,224 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 40px;
+  width:960px;
+  margin:0 auto;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.controls {
+    overflow:hidden;
+}
+
+.width {
+    width:50%;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.velo-slider .input-range {
+  -webkit-appearance: none;
+  width: 300px;
+  height: 10px;
+  border-radius: 5px;
+  background: #777676;
+  outline: none;
+}
+
+.velo-slider .input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 15px 10px;
+    border-color: transparent transparent #B04646 transparent;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+
+.velo-slider .input-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #353535;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+
+#star {
+    -webkit-transition: 0.5s -webkit-filter ease;
+-moz-transition: 0.5s -moz-filter ease;
+-o-transition: 0.5s -o-filter ease;
+transition: 0.5s filter ease;
+}
+
+.velo-slider .input-range::-moz-range-thumb:hover {
+  background: #e06161;
+}
+
+.velo-slider .input-range:active::-moz-range-thumb {
+  background: #e06161;
+}
+
+.velo-slider .range-value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #353535;
+  padding: 5px 10px;
+  margin-left: 7px;
+}
+
+.velo-slider .range-value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #353535;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+
+::-moz-range-track {
+  background: #ccc;
+  border: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
